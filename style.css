@@ -60,7 +60,64 @@ nav{
     font-weight: 100;
     padding-left: 1.25rem;
 }
-
-.hide,.btn-outline-light{
+.header{
+    position: sticky;
+    z-index: 1;
+    top: 3.125rem;
+    width: 100%;
+    display: flex;
+    gap: 1.25rem;
+    margin: 2.5rem 6.25rem 0.625rem 0;
+    line-height: 3.125rem;
+    background-color: #fff;
+    border-bottom: #8A8A8A solid 1px;
+}
+.header-sec,
+.btn-outline-light{
+    display: none;
+}
+.dropdown{
+    margin-left: auto;
+}
+.header>a{
+    text-decoration: none;
+    color: #8A8A8A;
+}
+.header>a:active{
+    color:#000000;
+    border-bottom: #000000 solid 2px;
+}
+.header>a.focus{
+    color:#000000;
+    border-bottom: #000000 solid 2px;
+}
+.btn-primary{
+    height: 2.3125rem;
+}
+.shift{
+    margin-right: 0.3125rem;
+}
+content{
+    gap: 40px; 
+    margin: 2.5rem 6.25rem 0.625rem 6.25rem;
+}
+.location>p{
+    opacity: 60%;
+}
+b{
+    margin: 0.3125rem 0px;
+    font-size: 20px;
+}
+.card-text{
+    opacity: .7;
+}
+svg{
+    cursor: pointer;
+}
+.modal-backdrop{
+    z-index: 20;
+}
+.hide,
+.float{
     display: none;
 }
