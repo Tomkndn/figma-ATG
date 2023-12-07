@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+nav{
+    padding: 0.625rem 2.5rem;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    align-items: center;
+}
+.form-control{
+    background-color: #f7fbff;
+}
+#search-box{
+    background: #F2F2F2;
+    border-radius: 21px;
+    padding-left: 2.5rem;
+    width: 25vw;
+}
+#search-icon{
+    position: relative;
+    left: 1.875rem;
+}
+.account{
+    font-weight: 400;
+}
+#highlight{
+    color: #2F6CE5;
+    font-weight: 900;
+}
+#background{
+    background: url('src/Assets/background.svg');
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 30rem;
+}
+.gradient{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0px 0px 6.875rem 9.375rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%);
+    height:-webkit-fill-available;
+}
+#details{
+    color: #F2F2F2;
+    font-weight: 900;
+}
+#details>p{
+    font-weight: 100;
+    padding-left: 1.25rem;
+}
+
+.hide,.btn-outline-light{
+    display: none;
+}
