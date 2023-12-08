@@ -11,7 +11,7 @@ import icon4 from "../Assets/icon4.svg";
 
 function Main() {
   return (
-    <div className="d-flex flex-row-reverse justify-content-between">
+    <div className="d-flex content flex-row-reverse justify-content-between">
       <div className="location mt-5" style={{ width: "25%" }}>
         <img src={loc} />
         Noida, India <img align="right" className="shift" src={edit} />
