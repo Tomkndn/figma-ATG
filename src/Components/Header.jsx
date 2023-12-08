@@ -1,6 +1,11 @@
+import React from 'react'
 import more from "../icons/more.svg";
+import PopUpModal from "./PopUpModal";
+
 
 export default function Header() {
+  const [modalShow, setModalShow] = React.useState(false);
+
   return (
     <>
       <header className="header mt-4">
@@ -35,7 +40,11 @@ export default function Header() {
           </div>
         </div>
         {/* <!-- Button trigger modal --> */}
-        <button type="button" className="btn btn-primary align-self-center">
+        <button
+          type="button"
+          className="btn btn-primary align-self-center"
+          onClick={() => setModalShow(true)}
+        >
           <img src={more} className="shift" alt="plus" />
           Join Group
         </button>
@@ -69,6 +78,7 @@ export default function Header() {
           </div>
         </div>
       </header>
+      <PopUpModal show={modalShow} onHide={() => setModalShow(false)} />
     </>
   );
 }

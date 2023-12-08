@@ -113,9 +113,6 @@ b{
 svg{
     cursor: pointer;
 }
-.modal-backdrop{
-    z-index: 20;
-}
 .hide,
 .float{
     display: none;
@@ -141,16 +138,13 @@ svg{
     #background{
         height: 20vh;
     }
-    .modal-dialog{
-        width: 50%;
-    }
 }
 @media screen and (max-width: 768.97px) {
     #search-box{
         display: none;
     }
     #sign-in{
-        visibility: hidden ;
+        display: none;
     }
     .modal-body{
         display: inline;
@@ -184,9 +178,6 @@ svg{
     .btn-outline-light{
         display: inline;
     }
-    .modal-dialog{
-        width: 75%;
-    }
 }
 @media screen and (max-width: 992.97px) { 
     html{
@@ -200,9 +191,6 @@ svg{
         margin: 0;
         gap: 0;
     }
-    /* .modal-dialog{
-        width: 75%;
-    } */
 }
 
 @media screen and (max-width: 1199.98px) {
